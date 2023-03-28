@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="PT_BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeautySalon Agendamento</title>
+    
+    
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+   <!-- Ícone Salão -->
+    <link rel="icon" href="Imagens/BeautySalonIcon.png">
+   
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <!--FORMULÁRIO DE AGENDAMENTO-->
+  <!--FORMULÁRIO DE AGENDAMENTO-->
+  <!--FORMULÁRIO DE AGENDAMENTO-->
+  <!--FORMULÁRIO DE AGENDAMENTO-->
+                      <header id="header">
+                       <nav class="container">
+                           <a class="logo" href="Home.html"><i class="icon-BeautySalonIcon"></i>Beauty<span>Salon</span>.</a>
+                        <a class="cadastro" href="Login.html">Log<span>in</span>.</a>
+                        <!-- menu -->
+                        <div class="menu">
+                          <ul class="grid">
+                            <li><a class="title" href="Home.html">Início</a></li>
+                            <li><a class="title" href="Home.html#about">Sobre</a></li>
+                            <li><a class="title" href="Home.html#services">Serviços</a></li>
+                            <li><a class="title" href="Home.html#testimonials">Depoimentos</a></li>
+                            <li><a class="title" href="Home.html#contact">Contato</a></li>
+                          </ul>
+                        </div>
+                        <!-- /menu -->
+                        <div class="toggle icon-menu"></div>
+                        <div class="toggle icon-close"></div>
+                      </nav>
+                    </header>
+
+                    <!-- HOME -->
+                      <section class="section" id="home">
+                        <div class="container grid">
+                          <div class="image">
+                            <img
+                              src="https://images.unsplash.com/photo-1614609819116-eee9c271a928?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpciUyMGN1dHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                              alt="Cliente tendo seu cabelo cortado pela profissional"
+                            />
+                          </div>
+                          <div class="text">
+                            <h2 class="title">Agende aqui o seu horário!</h2>
+                            <p>
+                              Aqui serão listadas opções de horários disponíveis no horário de funcionamento dos nossos estabelecimentos,
+                              não esqueça de selecionar a sua cidade e o salão que você pretende realizar seu atendimento.
+                            </p>
+
+                          </div>
+
+
+
+                          <header>
+
+                              <strong>Você está logado?</strong>
+                              <div>
+                                <input type="radio" name="nomeL" id="verificarLogin">
+                                <p class="textoField"><strong>Sim</strong></p>
+                              </div>
+                              <br>
+                              <div>
+                                <input type="radio" name="nomeL" id="verificarLogin">
+                                <p class="textoField"><strong>Não</strong></p>
+                              </div>
+                              <br><br>
+                              <div class="card">
+                                 <fieldset disabled id="FieldCidade" class="FieldCidade">
+                                     <legend><strong>Escolha a Cidade e o Salão desejado</strong></legend>
+                                     <select>
+                                          <optgroup label="Salões da BeautySalons São Paulo">
+                                              <option id="nulo" value="" selected disabled hidden>Escolha Aqui</option>
+                                              <option id="FieldCidadeOp" value="São Paulo" >BeautySalon - Avenida 9 de Julho - Número 49</option>
+                                              <option id="FieldCidadeOp" value="São Paulo" >BeautySalon - Rua Oscar Freire - Número 239</option>
+                                              <option id="FieldCidadeOp" value="São Paulo" >BeautySalon - Avenida Cruzeiro do Sul - Número 91</option>
+                                          </optgroup>
+                                          <optgroup label="Salões da BeautySalons Rio de Janeiro">
+                                              <option id="FieldCidadeOp" value="Rio de Janeiro" >BeautySalon - Avenida Delfim Moreira Leblon</option>
+                                              <option id="FieldCidadeOp" value="Rio de Janeiro" >BeautySalon - Rua Nascimento Silva Ipanema</option>
+                                              <option id="FieldCidadeOp" value="Rio de Janeiro" >BeautySalon - Rua Primeiro de Março</option>
+                                          </optgroup>
+                                      </select>
+                                 </fieldset>
+                              </div>
+                          </header>
+                        </div>
+                    </section>
+
+
+                    <div class="divider-1"></div>
+
+
+                    <section class="section">
+                       <div class="container grid">
+                           <header>
+                              <div class="card">
+                                  <h3>Dias e horários disponíveis para agendamento</h3>
+                                  <br>
+                                  <fieldset class="field">
+                                      <legend><strong>Escolha o seu Horário</strong></legend>
+                                      <br>
+                                      <div>
+                                          <input type="radio" id="Segunda" name="nome" value="Segunda-Feira" disabled>
+                                          <p class="textoField"><strong>Segunda-feira || 08:00 até ás 12:00</strong></p>
+                                      </div>
+                                      <br>
+                                      <div>
+                                          <input type="radio" id="Segunda2" name="nome" value="Segunda-Feira" disabled>
+                                          <p class="textoField"><strong>Segunda-feira || 13:00 até ás 17:00</strong></p>
+                                      </div>
+                                      <br><br>
+                                      <div>
+                                          <input type="radio" id="Terca" name="nome" value="Terca-Feira" disabled>
+                                          <p class="textoField"><strong>Terça-feira || 08:00 até ás 12:00</strong></p>
+                                      </div>
+                                      <br>
+                                      <div>
+                                          <input type="radio" id="Terca2" name="nome" value="Terca-Feira" disabled>
+                                          <p class="textoField"><strong>Terça-feira || 13:00 até ás 17:00</strong></p>
+                                      </div>
+                                      <br><br>
+                                      <div>
+                                          <input type="radio" id="Quarta" name="nome" value="Quarta-Feira" disabled>
+                                          <p class="textoField"><strong>Quarta-feira || 08:00 até ás 12:00</strong></p>
+                                      </div>
+                                      <br>
+                                      <div>
+                                          <input type="radio" id="Quarta2" name="nome" value="Quarta-Feira" disabled>
+                                          <p class="textoField"><strong>Quarta-feira || 13:00 até ás 17:00</strong></p>
+                                      </div>
+                                      <br><br>
+                                      <div>
+                                          <input type="radio" id="Quinta" name="nome" value="Quinta-Feira" disabled>
+                                          <p class="textoField"><strong>Quinta-feira || 08:00 até ás 12:00</strong></p>
+                                      </div>
+                                      <br>
+                                      <div>
+                                          <input type="radio" id="Quinta2" name="nome" value="Quinta-Feira" disabled>
+                                          <p class="textoField"><strong>Quinta-feira || 13:00 até ás 17:00</strong></p>
+                                      </div>
+                                      <br><br>
+                                      <div>
+                                          <input type="radio" id="Sexta" name="nome" value="Sexta-Feira" disabled>
+                                          <p class="textoField"><strong>Sexta-feira || 08:00 até ás 12:00</strong></p>
+                                      </div>
+                                      <br>
+                                      <div>
+                                          <input type="radio" id="Sexta2" name="nome" value="Sexta-Feira" disabled>
+                                          <p class="textoField"><strong>Sexta-feira || 13:00 até ás 17:00</strong></p>
+                                      </div>
+                                      <br>
+                                  </fieldset>
+                              </div>
+                           </header>
+
+                           <div class="agendar-box">
+                               <form>
+                                   <a type="submit" value="Confirmar" href="" onclick='disable_select()'>
+                                   <span></span>
+                                   <span></span>
+                                   <span></span>
+                                   <span></span>
+                                   Confirmar
+                                   </a>
+                               </form>
+                           </div>
+
+                       </div>
+
+                    </section>
+
+
+                    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+                   <!-- ACCORDION CIDADES -->
+                   <script>
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+
+                        for (i = 0; i < acc.length; i++) {
+                          acc[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                              panel.style.display = "none";
+                            } else {
+                              panel.style.display = "block";
+                            }
+                          });
+                        }
+                    </script>
+
+
+                    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+                   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                    <!-- swiper -->
+                    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                    <!-- scrollreveal -->
+                    <script src="https://unpkg.com/scrollreveal"></script>
+
+                    <!-- main.js -->
+                    <script src="main.js"></script>
+          
+          
+            <!--FORMULÁRIO DE CONFIRMAÇÃO-->
+            <!--FORMULÁRIO DE CONFIRMAÇÃO-->
+            <!--FORMULÁRIO DE CONFIRMAÇÃO-->
+            <!--FORMULÁRIO DE CONFIRMAÇÃO-->
+
+    
+    
+
+    
+</body>
+</html>
